@@ -1,1 +1,140 @@
-jQuery(function(d){var a=d(".preloader");d(window).load(function(){a.remove()});var c=d(window).height();d("#home-slider .item").css("height",c);d(window).resize(function(){"use strict",d("#home-slider .item").css("height",c)});d(window).on("scroll",function(){if(d(window).scrollTop()>c){d(".main-nav").addClass("navbar-fixed-top")}else{d(".main-nav").removeClass("navbar-fixed-top")}});d(window).scroll(function(f){e()});d(".navbar-collapse ul li a").on("click",function(){d("html, body").animate({scrollTop:d(this.hash).offset().top-5},1000);return false});function e(){var i=[];var j=[];var f=d(window).scrollTop();var h=200;var g=500;d(".navbar-collapse").find(".scroll a").each(function(){i.push(d(d(this).attr("href")).offset().top);j.push(d(d(this).attr("href")).offset().top+d(d(this).attr("href")).height())});d.each(i,function(k){if(f>i[k]-h){d(".navbar-collapse li.scroll").removeClass("active").eq(k).addClass("active")}})}d("#tohash").on("click",function(){d("html, body").animate({scrollTop:d(this.hash).offset().top-5},1000);return false});new WOW().init();smoothScroll.init();d("#about-us").bind("inview",function(g,h,f,i){if(h){d.each(d("div.progress-bar"),function(){d(this).css("width",d(this).attr("aria-valuetransitiongoal")+"%")});d(this).unbind("inview")}});d("#features").bind("inview",function(g,h,f,i){if(h){d(this).find(".timer").each(function(){var j=d(this);d({Counter:0}).animate({Counter:j.text()},{duration:2000,easing:"swing",step:function(){j.text(Math.ceil(this.Counter))}})});d(this).unbind("inview")}});d("#portfolio").on("click",".folio-read-more",function(j){j.preventDefault();var i=d(this).data("single_url");var g="#portfolio-single-wrap",k=g.split("#"),f=k[1],h=d("#"+f).offset().top;d("html, body").animate({scrollTop:h},600);d("#portfolio-single").slideUp(500,function(){d(this).load(i,function(){d(this).slideDown(500)})})});d("#portfolio-single-wrap").on("click",".close-folio-item",function(j){j.preventDefault();var g="#portfolio",k=g.split("#"),f=k[1],i=d("#"+f).offset(),h=i.top;d("html, body").animate({scrollTop:h},600);d("#portfolio-single").slideUp(500)});var b=d("#main-contact-form");b.submit(function(f){f.preventDefault();var g=d('<div class="form_status"></div>');d.ajax({url:d(this).attr("action"),beforeSend:function(){b.prepend(g.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn())}}).done(function(h){g.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut()})})});
+jQuery(function($) {
+
+	//Preloader
+	var preloader = $('.preloader');
+	$(window).load(function(){
+		preloader.remove();
+	});
+
+	//#main-slider
+	var slideHeight = $(window).height();
+	$('#home-slider .item').css('height',slideHeight);
+
+	$(window).resize(function(){'use strict',
+		$('#home-slider .item').css('height',slideHeight);
+	});
+	
+	//Scroll Menu
+	$(window).on('scroll', function(){
+		if( $(window).scrollTop()>slideHeight ){
+			$('.main-nav').addClass('navbar-fixed-top');
+		} else {
+			$('.main-nav').removeClass('navbar-fixed-top');
+		}
+	});
+	
+	// Navigation Scroll
+	$(window).scroll(function(event) {
+		Scroll();
+	});
+
+	$('.navbar-collapse ul li a').on('click', function() {  
+		$('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
+		return false;
+	});
+
+	// User define function
+	function Scroll() {
+		var contentTop      =   [];
+		var contentBottom   =   [];
+		var winTop      =   $(window).scrollTop();
+		var rangeTop    =   200;
+		var rangeBottom =   500;
+		$('.navbar-collapse').find('.scroll a').each(function(){
+			contentTop.push( $( $(this).attr('href') ).offset().top);
+			contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
+		})
+		$.each( contentTop, function(i){
+			if ( winTop > contentTop[i] - rangeTop ){
+				$('.navbar-collapse li.scroll')
+				.removeClass('active')
+				.eq(i).addClass('active');			
+			}
+		})
+	};
+
+	$('#tohash').on('click', function(){
+		$('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
+		return false;
+	});
+	
+	//Initiat WOW JS
+	new WOW().init();
+	//smoothScroll
+	smoothScroll.init();
+	
+	// Progress Bar
+	$('#about-us').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
+		if (visible) {
+			$.each($('div.progress-bar'),function(){
+				$(this).css('width', $(this).attr('aria-valuetransitiongoal')+'%');
+			});
+			$(this).unbind('inview');
+		}
+	});
+
+	//Countdown
+	$('#features').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
+		if (visible) {
+			$(this).find('.timer').each(function () {
+				var $this = $(this);
+				$({ Counter: 0 }).animate({ Counter: $this.text() }, {
+					duration: 2000,
+					easing: 'swing',
+					step: function () {
+						$this.text(Math.ceil(this.Counter));
+					}
+				});
+			});
+			$(this).unbind('inview');
+		}
+	});
+
+	// Portfolio Single View
+	$('#portfolio').on('click','.folio-read-more',function(event){
+		event.preventDefault();
+		var link = $(this).data('single_url');
+		var full_url = '#portfolio-single-wrap',
+		parts = full_url.split("#"),
+		trgt = parts[1],
+		target_top = $("#"+trgt).offset().top;
+
+		$('html, body').animate({scrollTop:target_top}, 600);
+		$('#portfolio-single').slideUp(500, function(){
+			$(this).load(link,function(){
+				$(this).slideDown(500);
+			});
+		});
+	});
+
+	// Close Portfolio Single View
+	$('#portfolio-single-wrap').on('click', '.close-folio-item',function(event) {
+		event.preventDefault();
+		var full_url = '#portfolio',
+		parts = full_url.split("#"),
+		trgt = parts[1],
+		target_offset = $("#"+trgt).offset(),
+		target_top = target_offset.top;
+		$('html, body').animate({scrollTop:target_top}, 600);
+		$("#portfolio-single").slideUp(500);
+	});
+
+	// Contact form
+	var form = $('#main-contact-form');
+	form.submit(function(event){
+		event.preventDefault();
+		var form_status = $('<div class="form_status"></div>');
+		$.ajax({
+			url: $(this).attr('action'),
+			beforeSend: function(){
+				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
+			}
+		}).done(function(data){
+			form_status.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
+		});
+	});
+
+	
+	
+});
+
