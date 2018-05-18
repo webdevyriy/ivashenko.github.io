@@ -1,507 +1,235 @@
 <!DOCTYPE html>
 <html lang=ru>
-
 <head>
-    <meta charset=utf-8>
-    <meta name=viewport content="width=device-width, initial-scale=1.0">
-    <meta name=description content>
-    <meta name=author content>
-    <title>Юрий Иващенко</title>
-    <link rel="shortcut icon" href=images/favicon.ico>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<meta name=description content>
+<meta name=author content>
+<title>Юрий Иващенко</title>
+<link rel="shortcut icon" href=images/favicon.ico>
 </head>
-
 <body>
-    <style type="text/css">
-    body {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
-        line-height: 24px;
-        color: #666;
-        background-color: #fff
-    }
+     <style type="text/css" >
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: #333
-    }
+body{font-family:'Open Sans',sans-serif;font-size:16px;line-height:24px;color:#666;background-color:#fff}h1,h2,h3,h4,h5,h6{color:#333}h2{font-size:30px;margin-bottom:20px}h3{font-size:18px}p{font-size:17px;font-weight:400}.parallax{background-size:cover;background-repeat:no-repeat;background-position:center;background-attachment:fixed}.parallax,.parallax h1,.parallax h2,.parallax h3,.parallax h4,.parallax h5,.parallax h6{color:#fff}.parallax input[type="text"],.parallax input[type="text"]:hover,.parallax input[type="email"],.parallax input[type="email"]:hover,.parallax input[type="url"],.parallax input[type="url"]:hover,.parallax input[type="password"],.parallax input[type="password"]:hover,.parallax textarea,.parallax textarea:hover{font-weight:300;color:#fff}.btn{border:0;border-radius:0}.btn.btn-primary:hover{background-color:#017fb5}.navbar-nav li a:hover,.navbar-nav li a:focus{outline:0;outline-offset:0;text-decoration:none;background:transparent}a{text-decoration:none;-webkit-transition:300ms;-moz-transition:300ms;-o-transition:300ms;transition:300ms}a:focus,a:hover{text-decoration:none;outline:0}section{padding:90px 0}.heading{padding-bottom:90px}.preloader{position:fixed;top:0;left:0;right:0;bottom:0;z-index:999999;background:#fff}.preloader>i{position:absolute;font-size:36px;line-height:36px;top:50%;left:50%;height:36px;width:36px;margin-top:-15px;margin-left:-15px;display:inline-block}#home-slider{overflow:hidden;position:relative}#home-slider .caption{position:absolute;top:50%;margin-top:-104px;left:0;right:0;text-align:center;text-transform:uppercase;z-index:15;font-size:18px;font-weight:300;color:#fff}#home-slider .caption h1{color:#fff;font-size:60px;font-weight:700;margin-bottom:30px}.caption .btn-start{color:#fff;font-size:14px;font-weight:600;padding:14px 40px;border:1px solid #6e6d6c;border-radius:4px;margin-top:40px}.caption .btn-start:hover{color:#fff}.carousel-fade .carousel-inner .item{opacity:0;-webkit-transition-property:opacity;transition-property:opacity;background-repeat:no-repeat;background-size:cover;height:2037px}.carousel-fade .carousel-inner .item:after{content:" ";position:absolute;top:0;bottom:0;left:0;right:0;background:rgba(0,0,0,.7)}.carousel-fade .carousel-inner .active{opacity:1}.carousel-fade .carousel-inner .active.left,.carousel-fade .carousel-inner .active.right{left:0;opacity:0;z-index:1}.carousel-fade .carousel-inner .next.left,.carousel-fade .carousel-inner .prev.right{opacity:1}.carousel-fade .carousel-control{z-index:2}.left-control,.right-control{position:absolute;top:50%;height:51px;width:51px;line-height:48px;border-radius:50%;border:1px solid #fff;z-index:20;font-size:24px;color:#fff;text-align:center;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-ms-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease}.left-control{left:-51px}.right-control{right:-51px}.left-control:hover,.right-control:hover{color:#fff}#home-slider:hover .left-control{left:30px}#home-slider:hover .right-control{right:30px}#home-slider .fa-angle-down{position:absolute;left:50%;bottom:50px;color:#fff;display:inline-block;width:24px;margin-left:-12px;font-size:24px;line-height:24px;z-index:999;-webkit-animation:bounce 3000ms infinite;animation:bounce 3000ms infinite}.navbar-right li a{color:#fff;text-transform:uppercase;font-size:14px;font-weight:600;padding-top:30px;padding-bottom:30px}.navbar-right li.active a{background-color:rgba(0,0,0,.2)}.navbar-brand h1{margin-top:5px}
 
-    h2 {
-        font-size: 30px;
-        margin-bottom: 20px
-    }
 
-    h3 {
-        font-size: 18px
-    }
 
-    p {
-        font-size: 17px;
-        font-weight: 400
-    }
-
-    .parallax {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed
-    }
-
-    .parallax,
-    .parallax h1,
-    .parallax h2,
-    .parallax h3,
-    .parallax h4,
-    .parallax h5,
-    .parallax h6 {
-        color: #fff
-    }
-
-    .parallax input[type="text"],
-    .parallax input[type="text"]:hover,
-    .parallax input[type="email"],
-    .parallax input[type="email"]:hover,
-    .parallax input[type="url"],
-    .parallax input[type="url"]:hover,
-    .parallax input[type="password"],
-    .parallax input[type="password"]:hover,
-    .parallax textarea,
-    .parallax textarea:hover {
-        font-weight: 300;
-        color: #fff
-    }
-
-    .btn {
-        border: 0;
-        border-radius: 0
-    }
-
-    .btn.btn-primary:hover {
-        background-color: #017fb5
-    }
-
-    .navbar-nav li a:hover,
-    .navbar-nav li a:focus {
-        outline: 0;
-        outline-offset: 0;
-        text-decoration: none;
-        background: transparent
-    }
-
-    a {
-        text-decoration: none;
-        -webkit-transition: 300ms;
-        -moz-transition: 300ms;
-        -o-transition: 300ms;
-        transition: 300ms
-    }
-
-    a:focus,
-    a:hover {
-        text-decoration: none;
-        outline: 0
-    }
-
-    section {
-        padding: 90px 0
-    }
-
-    .heading {
-        padding-bottom: 90px
-    }
-
-    .preloader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 999999;
-        background: #fff
-    }
-
-    .preloader>i {
-        position: absolute;
-        font-size: 36px;
-        line-height: 36px;
-        top: 50%;
-        left: 50%;
-        height: 36px;
-        width: 36px;
-        margin-top: -15px;
-        margin-left: -15px;
-        display: inline-block
-    }
-
-    #home-slider {
-        overflow: hidden;
-        position: relative
-    }
-
-    #home-slider .caption {
-        position: absolute;
-        top: 50%;
-        margin-top: -104px;
-        left: 0;
-        right: 0;
-        text-align: center;
-        text-transform: uppercase;
-        z-index: 15;
-        font-size: 18px;
-        font-weight: 300;
-        color: #fff
-    }
-
-    #home-slider .caption h1 {
-        color: #fff;
-        font-size: 60px;
-        font-weight: 700;
-        margin-bottom: 30px
-    }
-
-    .caption .btn-start {
-        color: #fff;
-        font-size: 14px;
-        font-weight: 600;
-        padding: 14px 40px;
-        border: 1px solid #6e6d6c;
-        border-radius: 4px;
-        margin-top: 40px
-    }
-
-    .caption .btn-start:hover {
-        color: #fff
-    }
-
-    .carousel-fade .carousel-inner .item {
-        opacity: 0;
-        -webkit-transition-property: opacity;
-        transition-property: opacity;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 2037px
-    }
-
-    .carousel-fade .carousel-inner .item:after {
-        content: " ";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(0, 0, 0, .7)
-    }
-
-    .carousel-fade .carousel-inner .active {
-        opacity: 1
-    }
-
-    .carousel-fade .carousel-inner .active.left,
-    .carousel-fade .carousel-inner .active.right {
-        left: 0;
-        opacity: 0;
-        z-index: 1
-    }
-
-    .carousel-fade .carousel-inner .next.left,
-    .carousel-fade .carousel-inner .prev.right {
-        opacity: 1
-    }
-
-    .carousel-fade .carousel-control {
-        z-index: 2
-    }
-
-    .left-control,
-    .right-control {
-        position: absolute;
-        top: 50%;
-        height: 51px;
-        width: 51px;
-        line-height: 48px;
-        border-radius: 50%;
-        border: 1px solid #fff;
-        z-index: 20;
-        font-size: 24px;
-        color: #fff;
-        text-align: center;
-        -webkit-transition: all .5s ease;
-        -moz-transition: all .5s ease;
-        -ms-transition: all .5s ease;
-        -o-transition: all .5s ease;
-        transition: all .5s ease
-    }
-
-    .left-control {
-        left: -51px
-    }
-
-    .right-control {
-        right: -51px
-    }
-
-    .left-control:hover,
-    .right-control:hover {
-        color: #fff
-    }
-
-    #home-slider:hover .left-control {
-        left: 30px
-    }
-
-    #home-slider:hover .right-control {
-        right: 30px
-    }
-
-    #home-slider .fa-angle-down {
-        position: absolute;
-        left: 50%;
-        bottom: 50px;
-        color: #fff;
-        display: inline-block;
-        width: 24px;
-        margin-left: -12px;
-        font-size: 24px;
-        line-height: 24px;
-        z-index: 999;
-        -webkit-animation: bounce 3000ms infinite;
-        animation: bounce 3000ms infinite
-    }
-
-    .navbar-right li a {
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 14px;
-        font-weight: 600;
-        padding-top: 30px;
-        padding-bottom: 30px
-    }
-
-    .navbar-right li.active a {
-        background-color: rgba(0, 0, 0, .2)
-    }
-
-    .navbar-brand h1 {
-        margin-top: 5px
-    }
     </style>
-    <div class=preloader> <i class="fa fa-circle-o-notch fa-spin"></i></div>
-    <header id=home>
-        <div id=home-slider class="carousel slide carousel-fade" data-ride=carousel>
-            <div class=carousel-inner>
-                <div class="item active" style=background-image:url(images/slider/1.jpg)>
-                    <div class=caption>
-                        <h1 class="animated fadeInLeftBig">Добро <span> пожаловать!</span></h1>
-                        <p class="animated fadeInRightBig">На страницу web разработчика</p>
-                        <a data-scroll class="btn btn-start animated fadeInUpBig" href=#services>Почему я?</a>
-                    </div>
-                </div>
-                <div class=item style=background-image:url(images/slider/2.jpg)>
-                    <div class=caption>
-                        <h1 class="animated fadeInLeftBig">Юрия<span> Иващенко</span></h1>
-                        <a data-scroll class="btn btn-start animated fadeInUpBig" href=#services>Почему я?</a>
-                    </div>
-                </div>
-                <div class=item style=background-image:url(images/slider/3.jpg)>
-                    <div class=caption>
-                        <h1 class="animated fadeInLeftBig">Разработка сайта под <span>Ключ</span></h1>
-                        <p class="animated fadeInRightBig"><strong>Корпоративный сайт<br>
+<div class=preloader> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+<header id=home>
+<div id=home-slider class="carousel slide carousel-fade" data-ride=carousel>
+<div class=carousel-inner>
+<div class="item active" style=background-image:url(images/slider/1.jpg)>
+<div class=caption>
+<h1 class="animated fadeInLeftBig">Добро <span> пожаловать!</span></h1>
+<p class="animated fadeInRightBig">На страницу web разработчика</p>
+<a data-scroll class="btn btn-start animated fadeInUpBig" href=#services>Почему я?</a>
+</div>
+</div>
+<div class=item style=background-image:url(images/slider/2.jpg)>
+<div class=caption>
+<h1 class="animated fadeInLeftBig">Юрия<span> Иващенко</span></h1>
+<a data-scroll class="btn btn-start animated fadeInUpBig" href=#services>Почему я?</a>
+</div>
+</div>
+<div class=item style=background-image:url(images/slider/3.jpg)>
+<div class=caption>
+<h1 class="animated fadeInLeftBig">Разработка сайта под <span>Ключ</span></h1>
+<p class="animated fadeInRightBig"><strong>Корпоративный сайт<br>
 Cайты на wordPress <br>
 Сайт визитка <br>
 Landing page
 </strong></p>
-                        <a data-scroll class="btn btn-start animated fadeInUpBig" href=#services>Почему я?</a>
-                    </div>
-                </div>
-            </div>
-            <a class=left-control href=#home-slider data-slide=prev><i class="fa fa-angle-left"></i></a>
-            <a class=right-control href=#home-slider data-slide=next><i class="fa fa-angle-right"></i></a>
-            <a id=tohash href=#services><i class="fa fa-angle-down"></i></a>
-        </div>
-        <div class=main-nav>
-            <div class=container>
-                <div class=navbar-header>
-                    <button type=button class=navbar-toggle data-toggle=collapse data-target=.navbar-collapse>
-                        <span class=sr-only>Toggle navigation</span>
-                        <span class=icon-bar></span>
-                        <span class=icon-bar></span>
-                        <span class=icon-bar></span>
-                    </button>
-                    <a class=navbar-brand href=index.html>
-                        <h1><img class=img-responsive src=images/logo.png alt=logo></h1>
-                    </a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right navbar-iva">
-                        <li class="scroll active"><a href=#home>Домой</a></li>
-                        <li class=scroll><a href=#services>Результаты</a></li>
-                        <li class=scroll><a href=#about-us>Обо мне</a></li>
-                        <li class=scroll><a href=#portfolio>Портфолио</a></li>
-                        <li class=scroll><a href=#cine>Цены</a></li>
-                        <li class=scroll><a href=#contact>Контакты</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
-    <section id=services>
-        <div class=container>
-            <div class="heading wow fadeInUp" data-wow-duration=1000ms data-wow-delay=300ms>
-                <div class=row>
-                    <div class="text-center col-sm-8 col-sm-offset-2">
-                        <h2>
+<a data-scroll class="btn btn-start animated fadeInUpBig" href=#services>Почему я?</a>
+</div>
+</div>
+</div>
+<a class=left-control href=#home-slider data-slide=prev><i class="fa fa-angle-left"></i></a>
+<a class=right-control href=#home-slider data-slide=next><i class="fa fa-angle-right"></i></a>
+<a id=tohash href=#services><i class="fa fa-angle-down"></i></a>
+</div>
+<div class=main-nav>
+<div class=container>
+<div class=navbar-header>
+<button type=button class=navbar-toggle data-toggle=collapse data-target=.navbar-collapse>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+</button>
+<a class=navbar-brand href=index.html>
+<h1><img class=img-responsive src=images/logo.png alt=logo></h1>
+</a>
+</div>
+<div class="collapse navbar-collapse">
+<ul class="nav navbar-nav navbar-right navbar-iva">
+<li class="scroll active"><a href=#home>Домой</a></li>
+<li class=scroll><a href=#services>Результаты</a></li>
+<li class=scroll><a href=#about-us>Обо мне</a></li>
+<li class=scroll><a href=#portfolio>Портфолио</a></li>
+<li class=scroll><a href=#cine>Цены</a></li>
+<li class=scroll><a href=#contact>Контакты</a></li>
+</ul>
+</div>
+</div>
+</div>
+</header>
+<section id=services>
+<div class=container>
+<div class="heading wow fadeInUp" data-wow-duration=1000ms data-wow-delay=300ms>
+<div class=row>
+<div class="text-center col-sm-8 col-sm-offset-2">
+<h2>
 Результаты </h2>
-                        <p><strong>Которые я вам дам</strong></p>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center our-services">
-                <div class=row>
-                    <div class="col-sm-4 wow fadeInDown" data-wow-duration=1000ms data-wow-delay=300ms>
-                        <div class=service-icon>
-                            <i class="fa fa-wrench"></i>
-                        </div>
-                        <div class=service-info>
-                            <h3><strong>Сайт с CMS</strong></h3>
-                            <p>Вы всегда сможете поменять текст, картинки на сайте <strong>сами!</strong> Без обращения к программисту !
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 wow fadeInDown" data-wow-duration=1000ms data-wow-delay=450ms>
-                        <div class=service-icon>
-                            <i class="fa fa-rocket"></i>
-                        </div>
-                        <div class=service-info>
-                            <h3><strong>Оригинальность</strong></h3>
-                            <p>Смогу сделать для вас<strong> уникальный</strong> сайт, который увеличит вашу <strong>прибыль</strong>, благодаря клиентам из интернета </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 wow fadeInDown" data-wow-duration=1000ms data-wow-delay=550ms>
-                        <div class=service-icon>
-                            <i class="fa fa-comments-o"></i>
-                        </div>
-                        <div class=service-info>
-                            <h3><strong>Я на связи</strong></h3>
-                            <p>Смогу проконсультировать вас с <strong>7.00 до 23.00 МСК</strong> по телефону, или по удобному вам мессенджеру </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 wow fadeInUp" data-wow-duration=1000ms data-wow-delay=650ms>
-                        <div class=service-icon>
-                            <i class="fa fa-coffee"></i>
-                        </div>
-                        <div class=service-info>
-                            <h3><strong>Комфорт</strong></h3>
-                            <p>Вам не нужно искать веб-дизайнера, копирайтера, и SEO <strong>специалиста</strong></p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 wow fadeInUp" data-wow-duration=1000ms data-wow-delay=750ms>
-                        <div class=service-icon>
-                            <i class="fa fa-mobile"></i>
-                        </div>
-                        <div class=service-info>
-                            <h3><strong>Оптимизация</strong></h3>
-                            <p>Ваш сайт будет одинаково <strong>хорошо</strong> выглядеть как на компьютерах, так и на <strong>мобильных</strong> устройствах </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 wow fadeInUp" data-wow-duration=1000ms data-wow-delay=850ms>
-                        <div class=service-icon>
-                            <i class="fa fa-gift"></i>
-                        </div>
-                        <div class=service-info>
-                            <h3><strong>Акция</strong></h3>
-                            <p>Любой кто сделает заказ до <strong>01.05.2018</strong> получит скидку в <strong>12%</strong> на любую мою работу </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id=about-us class=parallax>
-        <div class=container>
-            <div class=row>
-                <div class=col-sm-6>
-                    <div class="about-info wow fadeInUp" data-wow-duration=1000ms data-wow-delay=300ms>
-                        <div class=about-info-iva>
-                            <h2>Привет, друг!</h2>
-                            <p>Я занимаюсь созданием сайтов.</p>
-                            <p>Если вы предприниматель, то я смогу увеличить ваши продажи.</p>
-                            <p> Если вам нужно разработать сайт, вам нужно написать мне личное сообщение, и мы с вами вместе обсудим стоимость вашего проекта и его сроки.</p>
-                            <p> Вы можете написать мне, что у вас сейчас есть, и что бы вы хотели изменить, в вашем сайте </p>
-                            <p>Я смогу сделать так, чтобы ваш сайт быстро открывался на любом устройстве, и отлично выглядел. </p>
-                            <p>Специально для тех, кто дочитал до этого места, я даю купон на скидку <strong>"10%"</strong>на любую мою услугу </p>
-                            <p>(ХОЧУ САЙТ!)</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id=portfolio>
-        <div class=container>
-            <div class=row>
-                <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration=1000ms data-wow-delay=300ms>
-                    <h2> Несколько моих последних работ.</h2>
-                    <p><strong>Наведите курсор на картинку чтобы, посмотреть макет или перейти на сайт! </strong></p>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-        <div class=container>
-            <div class=row>
-                <div class=col-sm-6>
-                    <div class=partfolio-castom>
-                        <div class="folio-item wow zoomIn" data-wow-duration=1000ms data-wow-delay=300ms>
-                            <div class=folio-image>
-                                <img class=img-responsive src=images/portfolio/1.jpg alt>
-                            </div>
-                            <div class=overlay>
-                                <div class=overlay-content>
-                                    <div class=overlay-text>
-                                        <div class=folio-info>
-                                            <h3><strong>Штукатурка стен</strong></h3>
-                                        </div>
-                                        <div class=folio-overview>
-                                            <span class=folio-link><a class=folio-read-more href=# data-single_url=portfolio-single.html><i class="fa fa-cine"></i></a></span>
-                                            <span class=folio-expand><a href=https://webdevyriy.github.io/site4 target=_blank><i class="fa fa-opens"></i></a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=col-sm-6>
-                    <div class=partfolio-castom>
-                        <div class="folio-item wow zoomIn" data-wow-duration=1000ms data-wow-delay=300ms>
-                            <div class=folio-image>
-                                <img class=img-responsive src=images/portfolio/2.jpg alt>
-                            </div>
-                            <div class=overlay>
-                                <div class=overlay-content>
-                                    <div class=overlay-text>
-                                        <div class=folio-info>
-                                            <h3><strong>Добрый картон</strong></h3>
-                                        </div>
-                                        <div class=folio-overview>
-                                            <span class=folio-link><a class=folio-read-more href=# data-single_url=portfolio-single2.html><i class="fa fa-cine"></i></a></span>
-                                            <span class=folio-expand><a href=https://webdevyriy.github.io/site2 target=_blank><i class="fa fa-opens"></i></a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id=portfolio-single-wrap>
-            <div id=portfolio-single>
-            </div>
-        </div>
-    </section>
+<p><strong>Которые я вам дам</strong></p>
+</div>
+</div>
+</div>
+<div class="text-center our-services">
+<div class=row>
+<div class="col-sm-4 wow fadeInDown" data-wow-duration=1000ms data-wow-delay=300ms>
+<div class=service-icon>
+<i class="fa fa-wrench"></i>
+</div>
+<div class=service-info>
+<h3><strong>Сайт с CMS</strong></h3>
+<p>Вы всегда сможете поменять текст, картинки на сайте <strong>сами!</strong> Без обращения к программисту !
+</p>
+</div>
+</div>
+<div class="col-sm-4 wow fadeInDown" data-wow-duration=1000ms data-wow-delay=450ms>
+<div class=service-icon>
+<i class="fa fa-rocket"></i>
+</div>
+<div class=service-info>
+<h3><strong>Оригинальность</strong></h3>
+<p>Смогу сделать для вас<strong> уникальный</strong> сайт, который увеличит вашу <strong>прибыль</strong>, благодаря клиентам из интернета </p>
+</div>
+</div>
+<div class="col-sm-4 wow fadeInDown" data-wow-duration=1000ms data-wow-delay=550ms>
+<div class=service-icon>
+<i class="fa fa-comments-o"></i>
+</div>
+<div class=service-info>
+<h3><strong>Я на связи</strong></h3>
+<p>Смогу проконсультировать вас с <strong>7.00 до 23.00 МСК</strong> по телефону, или по удобному вам мессенджеру: Viber Telegram... </p>
+</div>
+</div>
+<div class="col-sm-4 wow fadeInUp" data-wow-duration=1000ms data-wow-delay=650ms>
+<div class=service-icon>
+<i class="fa fa-coffee"></i>
+</div>
+<div class=service-info>
+<h3><strong>Комфорт</strong></h3>
+<p>Вам не нужно искать веб-дизайнера, копирайтера, и SEO <strong>специалиста</strong></p>
+</div>
+</div>
+<div class="col-sm-4 wow fadeInUp" data-wow-duration=1000ms data-wow-delay=750ms>
+<div class=service-icon>
+<i class="fa fa-mobile"></i>
+</div>
+<div class=service-info>
+<h3><strong>Оптимизация</strong></h3>
+<p>Ваш сайт будет одинаково <strong>хорошо</strong> выглядеть как на компьютерах, так и на <strong>мобильных</strong> устройствах </p>
+</div>
+</div>
+<div class="col-sm-4 wow fadeInUp" data-wow-duration=1000ms data-wow-delay=850ms>
+<div class=service-icon>
+<i class="fa fa-gift"></i>
+</div>
+<div class=service-info>
+<h3><strong>Акция</strong></h3>
+<p>Любой кто сделает заказ до  <strong>01.05.2018</strong> получит скидку в <strong>12%</strong> на любую мою работу </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=about-us class=parallax>
+<div class=container>
+<div class=row>
+<div class=col-sm-6>
+<div class="about-info wow fadeInUp" data-wow-duration=1000ms data-wow-delay=300ms>
+<div class=about-info-iva>
+<h2>Привет, друг!</h2>
+<p>Я занимаюсь созданием сайтов.</p>
+<p>Если вы предприниматель, то я смогу увеличить ваши продажи.</p>
+<p> Если вам нужно разработать сайт, вам нужно написать мне личное сообщение, и мы с вами вместе обсудим стоимость вашего проекта и его сроки.</p>
+<p> Вы можете написать мне, что у вас сейчас есть, и что бы вы хотели изменить,  в вашем сайте </p>
+<p>Я смогу сделать так, чтобы ваш сайт быстро открывался на любом устройстве, и отлично выглядел. </p>
+<p>Специально для тех, кто дочитал до этого места, я даю купон на скидку <strong>"10%"</strong>на любую мою услугу </p>
+<p>(ХОЧУ САЙТ!)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=portfolio>
+<div class=container>
+<div class=row>
+<div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration=1000ms data-wow-delay=300ms>
+<h2> Несколько моих последних работ.</h2>
+<p><strong>Наведите курсор на картинку чтобы, посмотреть макет или перейти на сайт! </strong></p>
+<p></p>
+</div>
+</div>
+</div>
+<div class=container>
+<div class=row>
+<div class=col-sm-6>
+<div class=partfolio-castom>
+<div class="folio-item wow zoomIn" data-wow-duration=1000ms data-wow-delay=300ms>
+<div class=folio-image>
+<img class=img-responsive src=images/portfolio/1.jpg alt>
+</div>
+<div class=overlay>
+<div class=overlay-content>
+<div class=overlay-text>
+<div class=folio-info>
+<h3><strong>Штукатурка стен</strong></h3>
+</div>
+<div class=folio-overview>
+<span class=folio-link><a class=folio-read-more href=# data-single_url=portfolio-single.html><i class="fa fa-cine"></i></a></span>
+<span class=folio-expand><a href=https://webdevyriy.github.io/site4 target=_blank><i class="fa fa-opens"></i></a></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=col-sm-6>
+<div class=partfolio-castom>
+<div class="folio-item wow zoomIn" data-wow-duration=1000ms data-wow-delay=300ms>
+<div class=folio-image>
+<img class=img-responsive src=images/portfolio/2.jpg alt>
+</div>
+<div class=overlay>
+<div class=overlay-content>
+<div class=overlay-text>
+<div class=folio-info>
+<h3><strong>Добрый картон</strong></h3>
+</div>
+<div class=folio-overview>
+<span class=folio-link><a class=folio-read-more href=# data-single_url=portfolio-single2.html><i class="fa fa-cine"></i></a></span>
+<span class=folio-expand><a href=https://webdevyriy.github.io/site2 target=_blank><i class="fa fa-opens"></i></a></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id=portfolio-single-wrap>
+<div id=portfolio-single>
+</div>
+</div>
+</section>
     <section id="cine">
         <div class="container">
             <div class="row">
@@ -518,8 +246,10 @@ Landing page
                                 от 1500грн
                             </div>
                             <ul>
+
                                 <li>Кроссбраузерность</li>
                                 <li>Сроки 1-2 дня</li>
+                               
                             </ul>
                             <a href="#contact" class="btn btn-lg btn-primary">Хочу</a>
                         </div>
@@ -530,12 +260,13 @@ Landing page
                             <div class="price">
                                 от 2750грн
                             </div>
-                            <ul>
+                           <ul>
                                 <li>Система управления сайтом</li>
                                 <li>Базовое наполнение сайта</li>
                                 <li>Обучение работе с сайтом</li>
                                 <li>Кроссбраузерность</li>
                                 <li>Сроки 2-3 дня</li>
+                               
                             </ul>
                             <a href="#contact" class="btn btn-lg btn-primary">Хочу</a>
                         </div>
@@ -544,16 +275,20 @@ Landing page
                         <div class="single-table featured wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
                             <h3>Сайт фирмы</h3>
                             <div class="price">
-                                от 6000грн
+                              от  6000грн
                             </div>
-                            <ul>
+                           <ul>
+
                                 <li>Система управления сайтом</li>
+
                                 <li>Базовое наполнение сайта</li>
                                 <li>Обучение работе с сайтом</li>
                                 <li>Статистика посещений</li>
+
                                 <li>Кроссбраузерность</li>
                                 <li>Сроки 5-7 дней</li>
-                                <li> Поиск </li>
+                                 <li> Поиск </li>
+                               
                             </ul>
                             <a href="#contact" class="btn btn-lg btn-primary">Хочу</a>
                         </div>
@@ -562,10 +297,10 @@ Landing page
                         <div class="single-table wow flipInY" data-wow-duration="1000ms" data-wow-delay="1100ms">
                             <h3>Интернет магазин</h3>
                             <div class="price">
-                                от 11000грн
+                             от  11000грн
                             </div>
-                            <ul>
-                                <li> Ротатор слайдов</li>
+                             <ul>
+                                  <li>  Ротатор слайдов</li>
                                 <li>Система управления сайтом</li>
                                 <li>Базовое наполнение сайта</li>
                                 <li>Обучение работе с сайтом</li>
@@ -573,6 +308,7 @@ Landing page
                                 <li>Кроссбраузерность</li>
                                 <li>Сроки 14-20 дней</li>
                                 <li> Поиск </li>
+                               
                             </ul>
                             <a href="#contact" class="btn btn-lg btn-primary">Хочу</a>
                         </div>
@@ -581,75 +317,75 @@ Landing page
             </div>
         </div>
     </section>
-    <section id=contact>
-        <div id=contact-us class=parallax>
-            <div class=container>
-                <div class=row>
-                    <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration=1000ms data-wow-delay=300ms>
-                        <h2>Сделать заказ</h2>
-                    </div>
-                </div>
-                <div class="contact-form wow fadeIn" data-wow-duration=1000ms data-wow-delay=600ms>
-                    <div class=row>
-                        <div class=col-sm-6>
-                            <form id=main-contact-form name=contact-form method=POST action=sendemail.php>
-                                <div class="row wow fadeInUp" data-wow-duration=1000ms data-wow-delay=300ms>
-                                    <div class=col-sm-6>
-                                        <div class=form-group>
-                                            <input type=text name=user_name class=form-control placeholder=Имя required=required>
-                                        </div>
-                                    </div>
-                                    <div class=col-sm-6>
-                                        <div class=form-group>
-                                            <input type=email name=user_email class=form-control placeholder=Email required=required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=form-group>
-                                    <input type=text name=user_subject class=form-control placeholder="Тема проекта" required=required>
-                                </div>
-                                <div class=form-group>
-                                    <textarea name=message id=user_message class=form-control rows=4 placeholder=Написать required=required></textarea>
-                                </div>
-                                <div class=form-group>
-                                    <button type=submit class=btn-submit>Заказать</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class=col-sm-6>
-                            <div class="contact-info wow fadeInUp" data-wow-duration=1000ms data-wow-delay=300ms>
-                                <p>Напишите, и получите бонус от меня. </p>
-                                <ul class=address>
-                                    <li><i class="fa fa-phone"></i> <span> Телефон:</span> +380-98-120-36-10 </li>
-                                    <li><i class="fa fa-envelope"></i> <span> Email:</span><a href=mailto:someone@yoursite.com> yurii.ivashchenko.web@gmail.com</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer id=footer>
-        <div class="footer-top wow fadeInUp" data-wow-duration=1000ms data-wow-delay=300ms>
-            <div class="container text-center wow fadeInUp">
-                <div class=footer-logo>
-                    <p class=footer-logo-text>Давай дружить!</p>
-                </div>
-                <div class=social-icons>
-                    <ul>
-                        <li><a class=envelope href=#><i class="fa fa-vk"></i></a></li>
-                        <li><a class=twitter href=#><i class="fa fa-whatsapp"></i></a></li>
-                        <li><a class=dribbble href=#><i class="fa fa-skype"></i></a></li>
-                        <li><a class=facebook href=#><i class="fa fa-facebook"></i></a></li>
-                        <li><a class=linkedin href=#><i class="fa fa-instagram"></i></a></li>
-                        <li><a class=tumblr href=#><i class="fa fa-paper-plane-o" aria-hidden=true></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<section id=contact>
+<div id=contact-us class=parallax>
+<div class=container>
+<div class=row>
+<div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration=1000ms data-wow-delay=300ms>
+<h2>Сделать заказ</h2>
+</div>
+</div>
+<div class="contact-form wow fadeIn" data-wow-duration=1000ms data-wow-delay=600ms>
+<div class=row>
+<div class=col-sm-6>
+<form id=main-contact-form name=contact-form method=POST action=sendemail.php>
+<div class="row wow fadeInUp" data-wow-duration=1000ms data-wow-delay=300ms>
+<div class=col-sm-6>
+<div class=form-group>
+<input type=text name=user_name class=form-control placeholder=Имя required=required>
+</div>
+</div>
+<div class=col-sm-6>
+<div class=form-group>
+<input type=email name=user_email class=form-control placeholder=Email required=required>
+</div>
+</div>
+</div>
+<div class=form-group>
+<input type=text name=user_subject class=form-control placeholder="Тема проекта" required=required>
+</div>
+<div class=form-group>
+<textarea name=message id=user_message class=form-control rows=4 placeholder=Написать required=required></textarea>
+</div>
+<div class=form-group>
+<button type=submit class=btn-submit>Заказать</button>
+</div>
+</form>
+</div>
+<div class=col-sm-6>
+<div class="contact-info wow fadeInUp" data-wow-duration=1000ms data-wow-delay=300ms>
+<p>Напишите, и получите бонус от меня. </p>
+<ul class=address>
+<li><i class="fa fa-phone"></i> <span> Телефон:</span> +380-98-120-36-10 </li>
+<li><i class="fa fa-envelope"></i> <span> Email:</span><a href=mailto:someone@yoursite.com> yurii.ivashchenko.web@gmail.com</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer id=footer>
+<div class="footer-top wow fadeInUp" data-wow-duration=1000ms data-wow-delay=300ms>
+<div class="container text-center wow fadeInUp">
+<div class=footer-logo>
+<p class=footer-logo-text>Давай дружить!</p>
+</div>
+<div class=social-icons>
+<ul>
+<li><a class=envelope href=#><i class="fa fa-vk"></i></a></li>
+<li><a class=twitter href=#><i class="fa fa-whatsapp"></i></a></li>
+<li><a class=dribbble href=#><i class="fa fa-skype"></i></a></li>
+<li><a class=facebook href=#><i class="fa fa-facebook"></i></a></li>
+<li><a class=linkedin href=#><i class="fa fa-instagram"></i></a></li>
+<li><a class=tumblr href=#><i class="fa fa-paper-plane-o" aria-hidden=true></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+<link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -663,14 +399,6 @@ Landing page
     <script type="text/javascript" src="js/mousescroll.js"></script>
     <script type="text/javascript" src="js/smoothscroll.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script>
-    var __REPLAIN_ = "112cbfa1-0c8c-448e-8e15-9210f82a39bc";
-    (function(b) { var c = document.createElement("script");
-        c.type = "text/javascript";
-        c.async = true;
-        c.src = b; var a = document.getElementsByTagName("script")[0];
-        a.parentNode.insertBefore(c, a) })("https://widget.replain.cc/dist/client.js");
-    </script>
+<script>var __REPLAIN_="112cbfa1-0c8c-448e-8e15-9210f82a39bc";(function(b){var c=document.createElement("script");c.type="text/javascript";c.async=true;c.src=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(c,a)})("https://widget.replain.cc/dist/client.js");</script>
 </body>
-
 </html>
