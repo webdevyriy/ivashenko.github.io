@@ -1974,8 +1974,7 @@ pre code {
 }
 
 .container {
-    padding-right: 0px;
-    padding-left: 0px;
+    padding: 0;
     margin-right: auto;
     margin-left: auto
 }
