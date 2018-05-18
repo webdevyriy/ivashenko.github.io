@@ -25,10 +25,10 @@
 
 @media(max-width:767px) {
     body {
-    	overflow-x: hidden;
+    	overflow-x: hidden !important;
     	width: 100%;
-    	max-width: 100%;
-        font-size: 14px;
+    	max-width: 100% !important;
+        font-size: 14px !important;
     }
     #home-slider .caption h1 {
         font-size: 35px
