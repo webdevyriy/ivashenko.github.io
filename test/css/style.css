@@ -1,0 +1,193 @@
+body {
+  font-family: "Source Sans Pro", sans-serif; }
+
+img {
+  width: 100%; }
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0; }
+
+input:focus, button:focus {
+  outline: none;
+  text-decoration: none; }
+
+.header {
+  background: #fff; }
+
+.logo {
+  float: left;
+  padding: 1em 0em; }
+
+.head-nav {
+  float: right; }
+
+.head-nav ul {
+  margin: 0;
+  padding: 0; }
+
+.head-nav ul li {
+  display: inline-block; }
+
+.head-nav ul li a {
+  color: #6C6C6C;
+  text-decoration: none;
+  font-size: 1.4em;
+  font-weight: 400;
+  margin: 0px 20px 0px 20px;
+  display: block;
+  padding: 1.1em 0.3em; }
+
+.head-nav ul li a:hover, .head-nav ul li.active a {
+  border-bottom: 3px solid #5094F2;
+  color: #5094F2; }
+
+.mobile {
+  background: #fff url(../img/mobile-bg.jpg) center no-repeat;
+  background-size: 100% 102%; }
+  .mobile-img {
+    padding-top: 38px; }
+  .mobile-text {
+    margin-top: 140px;
+    color: #ffffff; }
+    .mobile-text__title {
+      font-size: 42px; }
+    .mobile-text__subtitle p {
+      font-size: 26px; }
+  .mobile-btn {
+    padding-top: 20px;
+    padding-left: 10px; }
+    .mobile-btn button {
+      width: 172px;
+      height: 41px;
+      font-size: 22px;
+      line-height: 8px;
+      color: #ffffff;
+      background-color: #5094f2; }
+      .mobile-btn button i {
+        padding-right: 11px; }
+
+.popular-block__img {
+  width: 186px;
+  margin: 0 auto;
+  padding-top: 73px;
+  padding-bottom: 28px; }
+.popular-block__title {
+  text-align: center;
+  padding-bottom: 9px; }
+  .popular-block__title a {
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center; }
+.popular-block__subtitle {
+  font-size: 14px;
+  color: #909090;
+  text-align: center;
+  padding-bottom: 94px; }
+
+.shopping-heading {
+  padding-bottom: 33px;
+  padding-left: 30px; }
+  .shopping-heading h2 {
+    font-size: 42px;
+    color: #6f7173; }
+.shopping-text__title {
+  padding-bottom: 5px; }
+  .shopping-text__title h3 {
+    color: #6f7173;
+    font-size: 26px; }
+.shopping-text__subtitle {
+  color: #909090;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 26px;
+  padding-bottom: 63px; }
+
+@media (max-width: 992px) {
+  .mobile {
+    background: #fff url(../img/mobile-bg-min.png) center no-repeat;
+    background-size: cover; }
+
+  .mobile-img {
+    padding-top: 20px; }
+
+  .mobile-text {
+    margin-top: 30px;
+    color: #ffffff; }
+
+  .mobile-text__title {
+    font-size: 31px; }
+
+  .mobile-text__subtitle p {
+    font-size: 23px;
+    line-height: 35.94px; }
+
+  .mobile-text-btn {
+    padding-top: 35px;
+    padding-left: 0; }
+
+  .head-nav {
+    background: none; }
+    .head-nav ul {
+      position: absolute;
+      margin: 0;
+      padding: 2% 0;
+      z-index: 999;
+      width: 92%;
+      display: none;
+      text-align: center;
+      left: 2em;
+      top: 4em; }
+      .head-nav ul li {
+        display: block;
+        float: none; }
+        .head-nav ul li a {
+          border-right: none;
+          border-bottom: none;
+          background: #5094F2;
+          color: #ffffff; }
+    .head-nav span.menu {
+      display: block;
+      background: none;
+      position: absolute;
+      top: 30px;
+      right: 22px; }
+      .head-nav span.menu:before {
+        content: url(../img/menu.png);
+        color: #FFF;
+        font-size: 1.3em;
+        text-transform: uppercase;
+        text-align: right;
+        padding: 0.5em 0.3em;
+        cursor: pointer; }
+    .head-nav ul li a {
+      text-decoration: none;
+      font-size: 1.2em;
+      padding: 0.5em 0.3em; }
+      .head-nav ul li a:hover {
+        border-bottom: none;
+        color: #000000; }
+    .head-nav ul li.active a {
+      border-bottom: none;
+      color: #000000; } }
+@media (max-width: 640px) {
+  .head-nav ul {
+    top: 4.2em; } }
+@media (max-width: 480px) {
+  .head-nav ul {
+    top: 4.4em; } }
+@media (max-width: 320px) {
+  .logo img {
+    width: 80%; }
+
+  .head-nav span.menu {
+    top: 25px; }
+  .head-nav ul {
+    left: 1em; } }
+.sign {
+  padding: 33px;
+  border-top: 1px solid #D3D3D3; }
+  .sign p {
+    color: #909090;
+    font-size: 15px;
+    font-weight: 300; }

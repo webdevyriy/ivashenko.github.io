@@ -1,0 +1,82 @@
+@media (max-width: 992px)
+  .mobile
+    background: #fff url(../img/mobile-bg-min.png) center  no-repeat 
+    background-size: cover
+  .mobile-img
+    padding-top: 20px
+  .mobile-text
+    margin-top: 30px
+    color: #ffffff 
+  .mobile-text__title
+    font-size: 31px
+  .mobile-text__subtitle p
+    font-size: 23px
+    line-height: 35.94px
+  .mobile-text-btn
+    padding-top: 35px
+    padding-left: 0
+  .head-nav
+    ul
+      li
+        display: block
+        float: none
+        a
+          border-right: none
+          border-bottom: none
+          background: #5094F2
+          color: #ffffff
+      position: absolute
+      margin: 0
+      padding: 2% 0
+      z-index: 999
+      width: 92%
+      display: none
+      text-align: center
+      left: 2em
+      top: 4em
+    span.menu
+      display: block
+      background: none
+      position: absolute
+      top: 30px
+      right: 22px
+      &:before
+        content: url(../img/menu.png)
+        color: #FFF
+        font-size: 1.3em
+        text-transform: uppercase
+        text-align: right
+        padding: 0.5em 0.3em
+        cursor: pointer
+    ul li
+      a
+        text-decoration: none
+        font-size: 1.2em
+        padding: 0.5em 0.3em
+        &:hover
+          border-bottom: none
+          color: #000000
+      &.active a
+        border-bottom: none
+        color: #000000
+    background: none
+
+@media (max-width: 640px)
+  
+  .head-nav ul
+    top: 4.2em
+
+@media (max-width: 480px)
+  
+  .head-nav ul
+    top: 4.4em
+
+@media (max-width: 320px)
+  
+  .logo img
+    width: 80%
+  .head-nav
+    span.menu
+      top: 25px
+    ul
+      left: 1em
